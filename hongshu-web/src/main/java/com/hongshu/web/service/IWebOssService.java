@@ -7,7 +7,7 @@ import java.util.List;
 /**
  * OSS
  *
- * @author: hongshu
+ * @Author hongshu
  */
 public interface IWebOssService {
 

@@ -14,7 +14,7 @@ import java.util.List;
 /**
  * OSS
  *
- * @author: hongshu
+ * @Author hongshu
  */
 @Service
 public class WebOssServiceImpl implements IWebOssService {

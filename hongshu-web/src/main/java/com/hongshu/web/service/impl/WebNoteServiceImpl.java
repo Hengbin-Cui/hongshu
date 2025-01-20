@@ -11,7 +11,7 @@ import com.hongshu.common.utils.ConvertUtils;
 import com.hongshu.web.auth.AuthContextHolder;
 import com.hongshu.web.domain.dto.NoteDTO;
 import com.hongshu.web.domain.entity.*;
-import com.hongshu.web.domain.vo.NoteVo;
+import com.hongshu.web.domain.vo.NoteVO;
 import com.hongshu.web.mapper.WebNoteMapper;
 import com.hongshu.web.mapper.WebUserMapper;
 import com.hongshu.web.service.*;
@@ -26,7 +26,7 @@ import java.util.*;
 import java.util.stream.Collectors;
 
 /**
- * @author: hongshu
+ * @Author hongshu
  */
 @Service
 public class WebNoteServiceImpl extends ServiceImpl<WebNoteMapper, WebNote> implements IWebNoteService {
@@ -40,13 +40,13 @@ public class WebNoteServiceImpl extends ServiceImpl<WebNoteMapper, WebNote> impl
     @Autowired
     IWebTagService tagService;
     @Autowired
-    IWebCategoryService categoryService;
+    IWebNavbarService categoryService;
     @Autowired
     IWebEsNoteService esNoteService;
     @Autowired
-    IWebFollowerService followerService;
+    IWebFollowService followerService;
     @Autowired
-    IWebLikeOrCollectionService likeOrCollectionService;
+    IWebLikeOrCollectService likeOrCollectionService;
     @Autowired
     IWebCommentService commentService;
     @Autowired
@@ -97,14 +97,14 @@ public class WebNoteServiceImpl extends ServiceImpl<WebNoteMapper, WebNote> impl
      * @param noteId 笔记ID
      */
     @Override
-    public NoteVo getNoteById(String noteId) {
+    public NoteVO getNoteById(String noteId) {
         WebNote note = this.getById(noteId);
         if (note == null) {
             throw new HongshuException(ResultCodeEnum.FAIL);
         }
         note.setViewCount(note.getViewCount() + 1);
         WebUser user = userService.getById(note.getUid());
-        NoteVo noteVo = ConvertUtils.sourceToTarget(note, NoteVo.class);
+        NoteVO noteVo = ConvertUtils.sourceToTarget(note, NoteVO.class);
         noteVo.setUsername(user.getUsername())
                 .setAvatar(user.getAvatar())
                 .setTime(note.getUpdateTime().getTime());
@@ -113,9 +113,9 @@ public class WebNoteServiceImpl extends ServiceImpl<WebNoteMapper, WebNote> impl
         noteVo.setIsFollow(follow);
 
         String currentUid = AuthContextHolder.getUserId();
-        List<WebLikeOrCollection> likeOrCollectionList = likeOrCollectionService.list(new QueryWrapper<WebLikeOrCollection>().eq("like_or_collection_id", noteId).eq("uid", currentUid));
+        List<WebLikeOrCollect> likeOrCollectionList = likeOrCollectionService.list(new QueryWrapper<WebLikeOrCollect>().eq("like_or_collection_id", noteId).eq("uid", currentUid));
 
-        Set<Integer> types = likeOrCollectionList.stream().map(WebLikeOrCollection::getType).collect(Collectors.toSet());
+        Set<Integer> types = likeOrCollectionList.stream().map(WebLikeOrCollect::getType).collect(Collectors.toSet());
         noteVo.setIsLike(types.contains(1));
         noteVo.setIsCollection(types.contains(3));
 
@@ -198,13 +198,13 @@ public class WebNoteServiceImpl extends ServiceImpl<WebNoteMapper, WebNote> impl
             ossService.batchDelete(pathArr, type);
             // TODO 可以使用多线程优化，
             // 删除点赞图片，评论，标签关系，收藏关系
-            likeOrCollectionService.remove(new QueryWrapper<WebLikeOrCollection>().eq("like_or_collection_id", noteId));
+            likeOrCollectionService.remove(new QueryWrapper<WebLikeOrCollect>().eq("like_or_collection_id", noteId));
             List<WebComment> commentList = commentService.list(new QueryWrapper<WebComment>().eq("nid", noteId));
             List<WebCommentSync> commentSyncList = commentSyncService.list(new QueryWrapper<WebCommentSync>().eq("nid", noteId));
             List<String> cids = commentList.stream().map(WebComment::getId).collect(Collectors.toList());
             List<String> cids2 = commentSyncList.stream().map(WebCommentSync::getId).collect(Collectors.toList());
             if (!cids.isEmpty()) {
-                likeOrCollectionService.remove(new QueryWrapper<WebLikeOrCollection>().in("like_or_collection_id", cids).eq("type", 2));
+                likeOrCollectionService.remove(new QueryWrapper<WebLikeOrCollect>().in("like_or_collection_id", cids).eq("type", 2));
             }
             commentService.removeBatchByIds(cids);
             commentSyncService.removeBatchByIds(cids2);
@@ -225,8 +225,8 @@ public class WebNoteServiceImpl extends ServiceImpl<WebNoteMapper, WebNote> impl
         if (!flag) {
             return;
         }
-        WebCategory category = categoryService.getById(note.getCid());
-        WebCategory parentCategory = categoryService.getById(note.getCpid());
+        WebNavbar category = categoryService.getById(note.getCid());
+        WebNavbar parentCategory = categoryService.getById(note.getCpid());
         List<String> dataList = null;
         try {
             dataList = ossService.saveBatch(files, type);
@@ -273,7 +273,7 @@ public class WebNoteServiceImpl extends ServiceImpl<WebNoteMapper, WebNote> impl
     }
 
     @Override
-    public Page<NoteVo> getHotPage(long currentPage, long pageSize) {
+    public Page<NoteVO> getHotPage(long currentPage, long pageSize) {
         return null;
     }
 

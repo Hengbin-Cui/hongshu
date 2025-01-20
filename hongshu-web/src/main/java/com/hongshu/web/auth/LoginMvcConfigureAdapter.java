@@ -7,7 +7,7 @@ import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupport;
 
 /**
- * @author: hongshu
+ * @Author hongshu
  */
 @Configuration
 public class LoginMvcConfigureAdapter extends WebMvcConfigurationSupport {
