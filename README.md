@@ -70,9 +70,9 @@
   <img src="doc/images/wx.png" style="width: 100px; height: 100px"/>
 
 ## 演示站（微服务版本-持续更新）
-- 【web端】 ➡️ [点我进入](http://47.95.205.22)
-- 【管理端】 ➡️ [点我进入](http://47.95.205.22/admin/)
-- 【移动端】 ➡️ [点我进入](http://47.95.205.22/app/) 或扫码体验: 
+- 【web端】 ➡️ [点我进入](http://115.190.73.103)
+- 【管理端】 ➡️ [点我进入](http://115.190.73.103/admin/)
+- 【移动端】 ➡️ [点我进入](http://115.190.73.103/app/) 或扫码体验: 
 
   <img src="doc/images/h5.png" style="width: 100px; height: 100px"/>
 
