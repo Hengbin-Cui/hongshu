@@ -85,7 +85,7 @@
 ## 项目地址
 目前项目托管在 Gitee 和 Github 平台上中，欢迎大家 Star 和 Fork 支持~
 - Gitee地址：https://gitee.com/Maverick_Ma/hongshu
-- Github地址：https://github.com/Maverick_Ma/HongShu
+- Github地址：https://github.com/Ma-YongJian/HongShu
 
 ## 项目文档
 * 文档及资料会暂时放到我的个人博客：[点我进入](https://mayongjian.cn)
