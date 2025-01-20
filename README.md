@@ -13,12 +13,18 @@
 </p>
 
 ## 项目简介
+基于 SpringBoot + Vue 前后端分离的仿小红书系统，1:1 还原小红书页面及功能。本项目采用当下最主流的前后端分离架构，前端使用 Vue3 + TypeScript 开发，后端采用 SpringBoot 框架。项目完整还原了小红书的核心功能，包括内容发布、社交互动、私信聊天、搜索发现等模块，致力于打造一个功能完善、体验流畅的社交分享平台。
 * [HongShu](https://gitee.com/Maverick_Ma/hongshu) 本项目为单应用版本 
-* 前端采用Vue3、ts、Element UI。
+* [HongShu-Web](https://gitee.com/Maverick_Ma/hongshu-web) 用户端采用Vue3、ts、Element UI。
+* [HongShu-Admin](https://gitee.com/Maverick_Ma/hongshu-admin) 管理端采用Vue3、Vite、Element UI。
 * 后端采用Spring Boot、Mybatis-plus、Spring Security、Redis & Jwt。
 * 权限认证使用Jwt，支持多终端认证系统。
 
-## 用户端内置功能
+## 项目背景
+小红书作为当下最受欢迎的生活方式分享社区，拥有海量的用户群体和丰富的内容生态。本项目旨在通过技术手段还原小红书的核心功能，不仅可以学习到完整的全栈开发流程，还能深入理解大型社交平台的架构设计和业务实现。
+
+## 项目特色
+### 用户端内置功能
 1. 瀑布流展示笔记、懒加载笔记图片
 2. 使用 ElasticSearch 做关键词搜索查询 
 3. 支持私信聊天，关注、评论、点赞和收藏等功能
@@ -26,7 +32,7 @@
 5. 双Token登陆机制，使用 Redis 做对象缓存
 6. 笔记发布和修改，支持本地存储和Minio存储
 
-## 管理端内置功能
+### 管理端内置功能
 1. 用户管理：该功能主要完成系统用户配置。
 2. 角色管理：角色菜单权限分配、设置角色按机构进行数据范围权限划分。
 3. 菜单管理：配置系统菜单，操作权限，按钮权限标识等。
@@ -59,14 +65,12 @@
 
 
 - 目前，微服务版源码暂未开源，详情可添加微信了解：coder_xiaomage
-- 如有项目问题、部署需求联系我即可
+- 如有项目问题、部署需求也可微信联系
 
 ## 演示站（微服务版本-持续更新）
 - 【web端】 ➡️ [点我进入](http://47.95.205.22)
 - 【管理端】 ➡️ [点我进入](http://47.95.205.22/admin/)
-- 【app端】 ➡️ [点我进入](http://47.95.205.22/app/) 或扫码:
-
-  <img src="doc/images/h5.png" style="width: 100px; height: 100px"/>
+- 【app端】 ➡️ [点我进入](http://47.95.205.22/app/) 或扫码体验: <img src="doc/images/h5.png" style="width: 100px; height: 100px"/>
 
 * 也感谢小伙伴们打赏支持更新升级服务器❤️
 
