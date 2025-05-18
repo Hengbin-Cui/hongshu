@@ -46,6 +46,7 @@
 | **[HongShu-Admin](https://gitee.com/Maverick_Ma/hongshu-admin)**  | Vue3 + Vite | [Gitee](https://gitee.com/Maverick_Ma/hongshu-admin) |
 | **[HongShu-App](https://gitee.com/Maverick_Ma/hongshu-app)** | Uniapp | [Gitee](https://gitee.com/Maverick_Ma/hongshu-app) |
 
+---
 
 ## 🌟 项目特色
 
@@ -57,6 +58,7 @@
 | 高并发优化      | Redis + MQ 消息队列         |
 | 安全认证        | 双Token无感刷新机制          |
 
+---
 
 ## 📅 版本演进
 > 💡 点击下方版本号可展开查看详细内容
@@ -92,6 +94,7 @@
 
 </details>
 
+---
 
 ## 🏗️ 技术选型
 
@@ -102,22 +105,26 @@
 
 > 系统架构图、详细技术栈请见[项目文档](https://mayongjian.cn)
 
+---
 
 ## 📦 项目地址
 
 - Gitee: [https://gitee.com/Maverick_Ma/hongshu](https://gitee.com/Maverick_Ma/hongshu)
 - Github: [https://github.com/Ma-YongJian/HongShu](https://github.com/Ma-YongJian/HongShu)
 
+---
 
 ## 📚 项目文档
 
 - 文档及资料：[个人博客](https://mayongjian.cn)
 
+---
 
 ## 🎬 视频演示
 
 - [Bilibili 演示视频](https://www.bilibili.com/video/BV1QP8dekEGq/?spm_id_from=333.999.list.card_archive.click&vd_source=ec9224821314432ac6e12dc7d500d74b)
 
+---
 
 ## 🌐 演示站（微服务版本-持续更新）
 
@@ -131,6 +138,7 @@
 > 微服务版源码暂未开源，如需可添加微信获取👇  
 > <img src="doc/images/wx.png" width="100"/>
 
+---
 
 ## 💖 打赏支持
 
@@ -139,6 +147,7 @@
 
 > **欢迎 Star & Fork 支持项目！如有问题或定制需求可微信联系作者。**
 
+---
 
 ## 🙏 致谢
 
@@ -147,12 +156,13 @@
 - [xiaozhao 仿小红书前端](https://gitee.com/xzjsccz/xiaohongshu)
 - <img src="./doc/images/qiniu.jpg" width="80" />感谢 [七牛云](https://portal.qiniu.com/signup?utm_source=kaiyuan&utm_media=mogu) 提供的免费云存储和CDN服务
 - <img src="./doc/images/jetbrains.png" width="40" />感谢 [jetbrains](https://www.jetbrains.com/?from=mogu_blog_v2) 提供的开源License
-
+---
 
 ## 🛠️ 快速开始
 
 详见[项目文档](https://mayongjian.cn)，或参考各子项目 README 进行本地部署体验。
 
+---
 
 ## ❓ FAQ
 
@@ -163,6 +173,7 @@
 - Q: 数据库脚本在哪里？
   A: 见后端项目 `doc/sql` 目录。
 
+---
 
 ## 📷 演示图
 
