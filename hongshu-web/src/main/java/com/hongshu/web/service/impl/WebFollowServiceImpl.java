@@ -52,8 +52,7 @@ public class WebFollowServiceImpl extends ServiceImpl<WebFollowMapper, WebFollow
     public Page<TrendVO> getFollowTrend(long currentPage, long pageSize) {
         Page<TrendVO> page = new Page<>();
         // 得到当前用户所有关注的用户
-        String currentUid = WebUtils.getRequestHeader(UserConstant.USER_ID);
-//        String currentUid = AuthContextHolder.getUserId();
+        String currentUid = AuthContextHolder.getUserId();
         List<WebFollow> followers = this.list(new QueryWrapper<WebFollow>().eq("uid", currentUid));
         List<String> fids = followers.stream().map(WebFollow::getFid).collect(Collectors.toList());
         fids.add(currentUid);
@@ -107,7 +106,7 @@ public class WebFollowServiceImpl extends ServiceImpl<WebFollowMapper, WebFollow
     @Override
     public Page<TrendVO> getFollowList(long currentPage, long pageSize) {
         Page<TrendVO> page = new Page<>();
-        String currentUid = WebUtils.getRequestHeader(UserConstant.USER_ID);
+        String currentUid = AuthContextHolder.getUserId();
         List<WebFollow> followers = this.list(new QueryWrapper<WebFollow>().eq("uid", currentUid));
         List<String> fids = followers.stream().map(WebFollow::getFid).collect(Collectors.toList());
         Page<WebNote> notePage = noteMapper.selectPage(new Page<>((int) currentPage, (int) pageSize),

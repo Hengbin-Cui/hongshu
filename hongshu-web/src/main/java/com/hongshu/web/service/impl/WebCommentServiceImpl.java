@@ -187,8 +187,7 @@ public class WebCommentServiceImpl extends ServiceImpl<WebCommentMapper, WebComm
     @Override
     public IPage<CommentVO> getNoticeComment(long currentPage, long pageSize) {
         Page<CommentVO> result = new Page<>();
-        String currentUid = WebUtils.getRequestHeader(UserConstant.USER_ID);
-//        String currentUid = AuthContextHolder.getUserId();
+        String currentUid = AuthContextHolder.getUserId();
 
         Page<WebComment> commentPage = this.page(new Page<>((int) currentPage, (int) pageSize), new QueryWrapper<WebComment>().or(e -> e.eq("note_uid", currentUid).or().eq("reply_uid", currentUid)).ne("uid", currentUid).orderByDesc("create_time"));
 

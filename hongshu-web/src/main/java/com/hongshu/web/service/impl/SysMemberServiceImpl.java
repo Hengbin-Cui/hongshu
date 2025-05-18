@@ -15,7 +15,6 @@ import com.hongshu.web.service.IWebOssService;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.ObjectUtils;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
 
@@ -36,8 +35,6 @@ public class SysMemberServiceImpl implements ISysMemberService {
     private SysMemberMapper memberMapper;
     @Autowired
     private IWebOssService ossService;
-    @Value("${oss.type}")
-    Integer type;
 
 
     /**
@@ -85,7 +82,7 @@ public class SysMemberServiceImpl implements ISysMemberService {
     public int insertMember(WebUser user, MultipartFile file) {
         // 上传头像
         if (ObjectUtils.isNotEmpty(file)) {
-            String avatar = ossService.save(file, type);
+            String avatar = ossService.save(file);
             user.setAvatar(avatar);
         }
         user.setHsId(Long.valueOf(RandomUtil.randomNumbers(10)));
@@ -108,7 +105,7 @@ public class SysMemberServiceImpl implements ISysMemberService {
         WebUser webUser = memberMapper.selectById(user.getId());
         // 更新头像
         if (ObjectUtils.isNotEmpty(file)) {
-            String avatar = ossService.save(file, type);
+            String avatar = ossService.save(file);
             user.setAvatar(avatar);
         }
         String newPassword = webUser.getPassword();

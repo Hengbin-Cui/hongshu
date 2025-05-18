@@ -97,8 +97,7 @@ public class WebChatServiceImpl extends ServiceImpl<WebChatMapper, WebChat> impl
      */
     @Override
     public List<ChatUserRelationVO> getChatUserList() {
-        String currentUid = WebUtils.getRequestHeader(UserConstant.USER_ID);
-//        String currentUid = AuthContextHolder.getUserId();
+        String currentUid = AuthContextHolder.getUserId();
         List<ChatUserRelationVO> result = new ArrayList<>();
         List<WebChatUserRelation> chatUserRelationList = chatUserRelationMapper.selectList(new QueryWrapper<WebChatUserRelation>().eq("accept_uid", currentUid).orderByDesc("timestamp"));
         if (chatUserRelationList.isEmpty()) {

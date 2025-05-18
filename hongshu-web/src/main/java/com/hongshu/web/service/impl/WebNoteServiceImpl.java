@@ -5,9 +5,11 @@ import cn.hutool.json.JSONUtil;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
+import com.hongshu.common.constant.UserConstant;
 import com.hongshu.common.enums.ResultCodeEnum;
 import com.hongshu.common.exception.web.HongshuException;
 import com.hongshu.common.utils.ConvertUtils;
+import com.hongshu.common.utils.WebUtils;
 import com.hongshu.web.auth.AuthContextHolder;
 import com.hongshu.web.domain.dto.NoteDTO;
 import com.hongshu.web.domain.entity.*;
@@ -17,7 +19,6 @@ import com.hongshu.web.mapper.WebUserMapper;
 import com.hongshu.web.service.*;
 import org.jetbrains.annotations.NotNull;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.multipart.MultipartFile;
@@ -57,9 +58,6 @@ public class WebNoteServiceImpl extends ServiceImpl<WebNoteMapper, WebNote> impl
     private IWebOssService ossService;
     @Autowired
     WebNoteMapper noteMapper;
-
-    @Value("${oss.type}")
-    Integer type;
 
 
     @NotNull
@@ -164,7 +162,7 @@ public class WebNoteServiceImpl extends ServiceImpl<WebNoteMapper, WebNote> impl
         // 批量上传图片
         List<String> dataList = null;
         try {
-            dataList = ossService.saveBatch(files, type);
+            dataList = ossService.saveBatch(files);
         } catch (Exception e) {
             log.error("图片上传失败");
             e.printStackTrace();
@@ -195,7 +193,7 @@ public class WebNoteServiceImpl extends ServiceImpl<WebNoteMapper, WebNote> impl
             for (Object o : array) {
                 pathArr.add((String) o);
             }
-            ossService.batchDelete(pathArr, type);
+            ossService.batchDelete(pathArr);
             // TODO 可以使用多线程优化，
             // 删除点赞图片，评论，标签关系，收藏关系
             likeOrCollectionService.remove(new QueryWrapper<WebLikeOrCollect>().eq("like_or_collection_id", noteId));
@@ -229,7 +227,7 @@ public class WebNoteServiceImpl extends ServiceImpl<WebNoteMapper, WebNote> impl
         WebNavbar parentCategory = categoryService.getById(note.getCpid());
         List<String> dataList = null;
         try {
-            dataList = ossService.saveBatch(files, type);
+            dataList = ossService.saveBatch(files);
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -241,7 +239,7 @@ public class WebNoteServiceImpl extends ServiceImpl<WebNoteMapper, WebNote> impl
         for (Object o : array) {
             pathArr.add((String) o);
         }
-        ossService.batchDelete(pathArr, type);
+        ossService.batchDelete(pathArr);
 
         String[] urlArr = Objects.requireNonNull(dataList).toArray(new String[dataList.size()]);
         String newUrls = JSONUtil.toJsonStr(urlArr);
@@ -285,7 +283,7 @@ public class WebNoteServiceImpl extends ServiceImpl<WebNoteMapper, WebNote> impl
             note.setPinned("0");
         } else {
             List<WebNote> noteList = this.list(new QueryWrapper<WebNote>().eq("uid", currentUid));
-            long count = noteList.stream().filter(item -> "1".equals(item.getPinned()) ).count();
+            long count = noteList.stream().filter(item -> "1".equals(item.getPinned())).count();
             if (count >= 3) {
                 throw new HongshuException("最多只能置顶3个笔记");
             }

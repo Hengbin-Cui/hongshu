@@ -13,16 +13,15 @@ import com.hongshu.web.domain.entity.WebNavbar;
 import com.hongshu.web.domain.entity.WebNote;
 import com.hongshu.web.domain.entity.WebUser;
 import com.hongshu.web.domain.vo.NoteSearchVO;
-import com.hongshu.web.mapper.WebUserMapper;
 import com.hongshu.web.mapper.SysNavbarMapper;
 import com.hongshu.web.mapper.SysNoteMapper;
+import com.hongshu.web.mapper.WebUserMapper;
 import com.hongshu.web.service.ISysNoteService;
 import com.hongshu.web.service.IWebEsNoteService;
 import com.hongshu.web.service.IWebOssService;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.ObjectUtils;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
 
@@ -49,8 +48,6 @@ public class SysNoteServiceImpl implements ISysNoteService {
     private SysNavbarMapper navbarMapper;
     @Autowired
     private IWebOssService ossService;
-    @Value("${oss.type}")
-    Integer type;
 
 
     /**
@@ -118,7 +115,7 @@ public class SysNoteServiceImpl implements ISysNoteService {
     public int insertNote(WebNote note, MultipartFile file) {
         // 上传头像
         if (ObjectUtils.isNotEmpty(file)) {
-            String noteCover = ossService.save(file, type);
+            String noteCover = ossService.save(file);
             note.setNoteCover(noteCover);
         }
         note.setCreator("System");
@@ -136,7 +133,7 @@ public class SysNoteServiceImpl implements ISysNoteService {
     public int updateNote(WebNote note, MultipartFile file) {
         // 上传头像
         if (ObjectUtils.isNotEmpty(file)) {
-            String noteCover = ossService.save(file, type);
+            String noteCover = ossService.save(file);
             note.setNoteCover(noteCover);
         }
         note.setUpdater("System");

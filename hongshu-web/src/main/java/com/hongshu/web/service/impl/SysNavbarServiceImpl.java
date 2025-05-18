@@ -9,7 +9,6 @@ import com.hongshu.web.service.ISysNavbarService;
 import com.hongshu.web.service.IWebOssService;
 import org.apache.commons.lang3.ObjectUtils;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
 
@@ -31,8 +30,6 @@ public class SysNavbarServiceImpl implements ISysNavbarService {
     private IWebOssService ossService;
     @Autowired
     private SysNavbarMapper navbarMapper;
-    @Value("${oss.type}")
-    Integer type;
 
 
     /**
@@ -81,7 +78,7 @@ public class SysNavbarServiceImpl implements ISysNavbarService {
      */
     @Override
     public int insertNavbar(WebNavbar category, MultipartFile file) {
-        String normalCover = ossService.save(file, type);
+        String normalCover = ossService.save(file);
         category.setNormalCover(normalCover);
         category.setCreator("system");
         category.setCreateTime(new Date());
@@ -98,7 +95,7 @@ public class SysNavbarServiceImpl implements ISysNavbarService {
     @Override
     public int updateNavbar(WebNavbar category, MultipartFile file) {
         if (ObjectUtils.isNotEmpty(file)) {
-            String normalCover = ossService.save(file, type);
+            String normalCover = ossService.save(file);
             category.setNormalCover(normalCover);
         }
         category.setUpdater("system");

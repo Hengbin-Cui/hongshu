@@ -25,11 +25,10 @@ public class WebOssController {
      * 上传文件
      *
      * @param file 文件
-     * @param type 上传类型
      */
     @PostMapping("save/{type}")
-    public Result<?> save(MultipartFile file, @PathVariable Integer type) {
-        String path = ossService.save(file, type);
+    public Result<?> save(MultipartFile file) {
+        String path = ossService.save(file);
         return Result.ok(path);
     }
 
@@ -37,14 +36,13 @@ public class WebOssController {
      * 批量上传文件
      *
      * @param files 文件集
-     * @param type  类型
      */
-    @PostMapping(value = "saveBatch/{type}")
-    public Result<List<String>> saveBatch(@RequestParam("uploadFiles") MultipartFile[] files, @PathVariable Integer type) {
+    @PostMapping(value = "saveBatch")
+    public Result<List<String>> saveBatch(@RequestParam("uploadFiles") MultipartFile[] files) {
         if (files.length == 0) {
             return Result.fail(null);
         }
-        List<String> stringList = ossService.saveBatch(files, type);
+        List<String> stringList = ossService.saveBatch(files);
         return Result.ok(stringList);
     }
 
@@ -52,11 +50,10 @@ public class WebOssController {
      * 删除文件
      *
      * @param path 路径
-     * @param type 类型
      */
-    @GetMapping("delete/{type}")
-    public Result<?> delete(String path, @PathVariable Integer type) {
-        ossService.delete(path, type);
+    @GetMapping("delete")
+    public Result<?> delete(String path) {
+        ossService.delete(path);
         return Result.ok();
     }
 
@@ -64,14 +61,13 @@ public class WebOssController {
      * 批量删除文件
      *
      * @param filePaths 文件路径集
-     * @param type      类型
      */
-    @PostMapping(value = "deleteBatch/{type}")
-    public Result<?> deleteBatch(@RequestBody List<String> filePaths, @PathVariable Integer type) {
+    @PostMapping(value = "deleteBatch")
+    public Result<?> deleteBatch(@RequestBody List<String> filePaths) {
         if (filePaths.isEmpty()) {
             return Result.fail(null);
         }
-        ossService.batchDelete(filePaths, type);
+        ossService.batchDelete(filePaths);
         return Result.ok();
     }
 }

@@ -97,8 +97,7 @@ public class WebLikeOrCollectServiceImpl extends ServiceImpl<WebLikeOrCollectMap
     @Override
     public Page<LikeOrCollectVO> getNoticeLikeOrCollection(long currentPage, long pageSize) {
         Page<LikeOrCollectVO> result = new Page<>();
-        String currentUid = WebUtils.getRequestHeader(UserConstant.USER_ID);
-//        String currentUid = AuthContextHolder.getUserId();
+        String currentUid = AuthContextHolder.getUserId();
 
         Page<WebLikeOrCollect> likeOrCollectionPage = this.page(new Page<>((int) currentPage, (int) pageSize), new QueryWrapper<WebLikeOrCollect>().eq("publish_uid", currentUid).ne("uid", currentUid).orderByDesc("create_time"));
         List<WebLikeOrCollect> likeOrCollectionList = likeOrCollectionPage.getRecords();
