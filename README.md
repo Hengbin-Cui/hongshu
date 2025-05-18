@@ -73,7 +73,7 @@
 
   <img src="doc/images/h5.png" style="width: 100px; height: 100px"/>
 
-* 也感谢小伙伴们打赏支持更新升级服务器❤️
+* 也感谢小伙伴们打赏支持用于升级服务器❤️
 
   <img src="doc/images/pay.png" style="width: 200px; height: 100px"/>
 
