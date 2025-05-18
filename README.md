@@ -112,6 +112,8 @@
 - Gitee: [https://gitee.com/Maverick_Ma/hongshu](https://gitee.com/Maverick_Ma/hongshu)
 - Github: [https://github.com/Ma-YongJian/HongShu](https://github.com/Ma-YongJian/HongShu)
 
+> **欢迎 Star & Fork 支持项目！如有`问题`、`部署需求`或`定制需求`可微信联系作者。**
+
 ---
 
 ## 📚 项目文档
@@ -144,8 +146,6 @@
 
 感谢小伙伴们打赏支持，用于升级服务器❤️  
 <img src="doc/images/pay.png" width="200"/>
-
-> **欢迎 Star & Fork 支持项目！如有问题或定制需求可微信联系作者。**
 
 ---
 
