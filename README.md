@@ -182,24 +182,20 @@
   <tr>
     <td><img src="doc/images/web/web-login.png" width="300"/></td>
     <td><img src="doc/images/web/web-dashboard.png" width="300"/></td>
-  </tr>
-  <tr>
     <td><img src="doc/images/web/web-search.png" width="300"/></td>
-    <td><img src="doc/images/web/web-trends.png" width="300"/></td>
   </tr>
   <tr>
+    <td><img src="doc/images/web/web-trends.png" width="300"/></td>
     <td><img src="doc/images/web/web-message.png" width="300"/></td>
     <td><img src="doc/images/web/web-follow.png" width="300"/></td>
   </tr>
   <tr>
     <td><img src="doc/images/web/web-publish.png" width="300"/></td>
     <td><img src="doc/images/web/web-publish-map.png" width="300"/></td>
-  </tr>
-  <tr>
     <td><img src="doc/images/web/web-publish-img.png" width="300"/></td>
-    <td><img src="doc/images/web/web-publish-video.png" width="300"/></td>
   </tr>
   <tr>
+    <td><img src="doc/images/web/web-publish-video.png" width="300"/></td>
     <td><img src="doc/images/web/web-main-img.png" width="300"/></td>
     <td><img src="doc/images/web/web-user.png" width="300"/></td>
   </tr>
@@ -211,12 +207,10 @@
   <tr>
     <td><img src="doc/images/admin/admin-login.png" width="300"/></td>
     <td><img src="doc/images/admin/admin-data.png" width="300"/></td>
-  </tr>
-  <tr>
     <td><img src="doc/images/admin/admin-category.png" width="300"/></td>
-    <td><img src="doc/images/admin/admin-member.png" width="300"/></td>
   </tr>
   <tr>
+    <td><img src="doc/images/admin/admin-member.png" width="300"/></td>
     <td><img src="doc/images/admin/admin-note.png" width="300"/></td>
     <td><img src="doc/images/admin/admin-album.png" width="300"/></td>
   </tr>
