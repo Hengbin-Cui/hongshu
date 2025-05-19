@@ -24,12 +24,11 @@
 
 
 > **声明**  
-> 本项目基于 Mit 协议，免费开源，仅供学习交流，禁止转卖，谨防受骗。如需商用请保留版权信息，确保合法合规使用，运营风险自负，与作者无关。
+> 本项目基于 MIT 协议，免费开源，仅供学习交流，禁止转卖，谨防受骗。如需商用请保留版权信息，确保合法合规使用，运营风险自负，与作者无关。
 
 ---
 
-> **移动端通知**  
-> 🎉 因移动端重构，原移动端可通过 `¥99` 获取学习
+> 💡通知：因移动端重构，原移动端暂可通过赞助 `¥99` 方式获取
 
 ## 🚀 项目简介
 
@@ -39,24 +38,34 @@
 
 ### 📂 项目组成
 
-| 模块 | 技术栈 | 地址 |
-|------|--------|------|
-| **[HongShu](https://gitee.com/Maverick_Ma/hongshu)** | SpringBoot | [Gitee](https://gitee.com/Maverick_Ma/hongshu) |
-| **[HongShu-Web](https://gitee.com/Maverick_Ma/hongshu-web)** | Vue3 + Element Plus | [Gitee](https://gitee.com/Maverick_Ma/hongshu-web) |
-| **[HongShu-Admin](https://gitee.com/Maverick_Ma/hongshu-admin)**  | Vue3 + Vite | [Gitee](https://gitee.com/Maverick_Ma/hongshu-admin) |
-| **[HongShu-App](https://gitee.com/Maverick_Ma/hongshu-app)** | Uniapp | [Gitee](https://gitee.com/Maverick_Ma/hongshu-app) |
+| 模块 | 技术栈 | 地址                                                                                                |
+|------|--------|---------------------------------------------------------------------------------------------------|
+| **[HongShu](https://gitee.com/Maverick_Ma/hongshu)** | SpringBoot | [Gitee](https://gitee.com/Maverick_Ma/hongshu) 、 [github](https://github.com/Ma-YongJian/HongShu) |
+| **[HongShu-Web](https://gitee.com/Maverick_Ma/hongshu-web)** | Vue3 + Element Plus | [Gitee](https://gitee.com/Maverick_Ma/hongshu-web) 、 [github](https://github.com/Ma-YongJian/HongShu-Web) |
+| **[HongShu-Admin](https://gitee.com/Maverick_Ma/hongshu-admin)**  | Vue3 + Vite | [Gitee](https://gitee.com/Maverick_Ma/hongshu-admin) 、 [github](https://github.com/Ma-YongJian/HongShu-Admin) |
+| **[HongShu-App](https://gitee.com/Maverick_Ma/hongshu-app)** | Uniapp | [Gitee](https://gitee.com/Maverick_Ma/hongshu-app) 、 [github](https://github.com/Ma-YongJian/HongShu-App) |
 
+### 🏗️ 技术选型
+
+- 后端：SpringBoot、SpringCloud、Nacos、Redis、ElasticSearch、MySQL
+- 前端：Vue3、TypeScript、Element UI、Vite、uniapp
+- 消息：WebSocket、Netty、MQ
+- 存储：本地、Minio、七牛云、腾讯云、阿里云
+- 短信：阿里云、腾讯云、云片
+- 地图：高德地图
 ---
 
 ## 🌟 项目特色
 
-| 功能模块        | 技术实现                      |
-|----------------|-----------------------------|
-| 智能推荐        | ElasticSearch + 协同过滤算法 |
-| 即时通讯        | WebSocket + Netty           |
-| 多存储方案      | 七牛云/阿里云/腾讯云OSS动态切换 |
-| 高并发优化      | Redis + MQ 消息队列         |
-| 安全认证        | 双Token无感刷新机制          |
+| 功能模块      | 技术实现                     |
+|-----------|--------------------------|
+| 智能推荐      | ElasticSearch + 协同过滤算法   |
+| 即时通讯      | WebSocket + Netty        |
+| 多端存储方案    | Minio/七牛云/阿里云/腾讯云OSS动态切换 |
+| 高并发优化     | Redis + MQ 消息队列          |
+| 安全认证      | 双Token无感刷新机制             |
+| 数据双通道同步机制 | 实时写入机制、定时更新机制            |
+| 社交与电商融入   | 打通商品和社交通道，实现种草分享，链接购买             |
 
 ---
 
@@ -96,38 +105,6 @@
 
 ---
 
-## 🏗️ 技术选型
-
-- SpringBoot、SpringCloud、Nacos、Redis、ElasticSearch、MySQL
-- 前端：Vue3、TypeScript、Element UI、Vite、uniapp
-- 消息：WebSocket、Netty、MQ
-- 存储：本地、Minio、七牛云、腾讯云、阿里云
-
-> 系统架构图、详细技术栈请见[项目文档](https://mayongjian.cn)
-
----
-
-## 📦 项目地址
-
-- Gitee: [https://gitee.com/Maverick_Ma/hongshu](https://gitee.com/Maverick_Ma/hongshu)
-- Github: [https://github.com/Ma-YongJian/HongShu](https://github.com/Ma-YongJian/HongShu)
-
-> **欢迎 Star & Fork 支持项目！如有`问题`、`部署需求`或`定制需求`可微信联系作者。**
-
----
-
-## 📚 项目文档
-
-- 文档及资料：[个人博客](https://mayongjian.cn)
-
----
-
-## 🎬 视频演示
-
-- [Bilibili 演示视频](https://www.bilibili.com/video/BV1QP8dekEGq/?spm_id_from=333.999.list.card_archive.click&vd_source=ec9224821314432ac6e12dc7d500d74b)
-
----
-
 ## 🌐 演示站（微服务版本-持续更新）
 
 | 端口   | 入口链接                                   | 二维码                     |
@@ -136,9 +113,30 @@
 | 管理端 | [点我进入](http://115.190.73.103/admin/)  | -                          |
 | 移动端 | [点我进入](http://115.190.73.103/app/)    | <img src="doc/images/h5.png" width="100"/> |
 
-> 原移动端版本 `¥99` 可获取学习。
-> 微服务版源码暂未开源，如需可添加微信获取👇  
-> <img src="doc/images/wx.png" width="100"/>
+> 微服务版源码暂未开源，如需可点击[获取源码](https://www.yuque.com/xiaomage-ippj7/kaoqwn/rqslw69egcbgx7v7?singleDoc#) 
+> <br>或添加微信获取👇  
+> <br><img src="doc/images/wx.png" width="200"/>
+
+---
+
+## 📦 项目地址
+
+- Gitee: [https://gitee.com/Maverick_Ma/hongshu](https://gitee.com/Maverick_Ma/hongshu)
+- Github: [https://github.com/Ma-YongJian/HongShu](https://github.com/Ma-YongJian/HongShu)
+
+> **欢迎 Star & Fork 支持项目！如有`问题`、`部署需求`或`定制需求`可微信联系作者👆**
+
+---
+
+## 📚 项目文档
+
+- 文档及资料：[个人博客](https://www.yuque.com/xiaomage-ippj7/kaoqwn/zdgtgrco82vftbot?singleDoc#)
+
+---
+
+## 🎬 视频演示
+
+- [Bilibili 演示视频](https://www.bilibili.com/video/BV1QP8dekEGq/?spm_id_from=333.999.list.card_archive.click&vd_source=ec9224821314432ac6e12dc7d500d74b)
 
 ---
 
@@ -160,14 +158,14 @@
 
 ## 🛠️ 快速开始
 
-详见[项目文档](https://mayongjian.cn)，或参考各子项目 README 进行本地部署体验。
+详见[项目文档](https://www.yuque.com/xiaomage-ippj7/kaoqwn/zdgtgrco82vftbot?singleDoc# )，或参考各子项目 README 进行本地部署体验。
 
 ---
 
 ## ❓ FAQ
 
 - Q: 如何本地运行？
-  A: 详见各子项目 README 或[项目文档](https://mayongjian.cn)。
+  A: 详见各子项目 README 或 [项目文档](https://www.yuque.com/xiaomage-ippj7/kaoqwn/zdgtgrco82vftbot?singleDoc# )。
 - Q: 依赖环境有哪些？
   A: JDK 8+、Node 16+、MySQL 8+、Redis 6+ 、Elasticsearch 7+等。
 - Q: 数据库脚本在哪里？
