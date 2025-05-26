@@ -28,7 +28,7 @@
 
 ---
 
-> 💡通知：因移动端重构，原移动端源码可通过赞助 `¥99` 方式获取
+> 💡通知：因移动端重构，现开放原移动端源码（赞助 `¥99`即可获取），用于升级服务器
 
 ## 🚀 项目简介
 
@@ -72,7 +72,7 @@
 ## 📅 版本演进
 > 💡 点击下方版本号可展开查看详细内容
 <details>
-<summary><b>v1.0（当前开源版）</b></summary>
+<summary><b>v1.0（当前Lite版）</b></summary>
 
 - ES 智能查询、笔记随机推荐
 - 笔记支持图文类型
@@ -82,7 +82,7 @@
 </details>
 
 <details>
-<summary><b>v2.0</b></summary>
+<summary><b>v2.0（Pro版）</b></summary>
 
 - 新增 uniapp 移动端
 - 笔记支持视频和 live 图类型
@@ -92,7 +92,7 @@
 </details>
 
 <details>
-<summary><b>v3.0</b></summary>
+<summary><b>v3.0（Pro版）</b></summary>
 
 - 重构为 springCloud 微服务架构，Nacos 配置中心
 - 新后台管理页面（Arco-Design）
@@ -113,9 +113,10 @@
 | 管理端 | [点我进入](http://115.190.73.103/admin/)  | -                          |
 | 移动端 | [点我进入](http://115.190.73.103/app/)    | <img src="doc/images/h5.png" width="100"/> |
 
-> 微服务版源码暂未开源，如需可点击[获取源码](https://www.yuque.com/xiaomage-ippj7/kaoqwn/rqslw69egcbgx7v7?singleDoc#) 
-> <br>或添加微信获取👇  
-> <br><img src="doc/images/wx.png" width="200"/>
+> 🌟 Pro版源码暂未开源，如需可点击 [获取源码](https://www.yuque.com/xiaomage-ippj7/kaoqwn/rqslw69egcbgx7v7?singleDoc#)
+> 或 `添加微信` 获取👇 
+> 
+> <img src="doc/images/wx.png" width="200"/>
 
 ---
 
@@ -124,13 +125,13 @@
 - Gitee: [https://gitee.com/Maverick_Ma/hongshu](https://gitee.com/Maverick_Ma/hongshu)
 - Github: [https://github.com/Ma-YongJian/HongShu](https://github.com/Ma-YongJian/HongShu)
 
-> **欢迎 Star & Fork 支持项目！如有`问题`、`部署需求`或`定制需求`可微信联系作者👆**
+> **欢迎 Star & Fork 支持项目！如有`项目问题`、`部署`或`定制需求`可微信联系作者**
 
 ---
 
 ## 📚 项目文档
 
-- 文档及资料：[个人博客](https://www.yuque.com/xiaomage-ippj7/kaoqwn/zdgtgrco82vftbot?singleDoc#)
+- 文档及资料：[博客](https://www.yuque.com/xiaomage-ippj7/kaoqwn/zdgtgrco82vftbot?singleDoc#)
 
 ---
 
@@ -142,18 +143,12 @@
 
 ## 💖 打赏支持
 
-感谢小伙伴们打赏支持，用于升级服务器❤️  
-<img src="doc/images/pay.png" width="200"/>
+感谢小伙伴们打赏支持！当前服务器配置有限（2核4G），偶尔会有加载缓慢的情况。
 
----
+<img src="doc/images/pay.png" width="300"/>
 
-## 🙏 致谢
-
-- [若依 RuoYi](https://gitee.com/y_project/RuoYi)
-- [蘑菇博客](https://gitee.com/moxi159753/mogu_blog_v2)
-- [xiaozhao 仿小红书前端](https://gitee.com/xzjsccz/xiaohongshu)
-- <img src="./doc/images/qiniu.jpg" width="80" />感谢 [七牛云](https://portal.qiniu.com/signup?utm_source=kaiyuan&utm_media=mogu) 提供的免费云存储和CDN服务
-- <img src="./doc/images/jetbrains.png" width="40" />感谢 [jetbrains](https://www.jetbrains.com/?from=mogu_blog_v2) 提供的开源License
+`小龟速服务器正在奔跑中...您的咖啡☕️打赏将直接兑换成服务器涡轮增压⏩
+`
 ---
 
 ## 🛠️ 快速开始
@@ -179,24 +174,38 @@
 
 <table>
   <tr>
-    <td><img src="doc/images/web/web-login.png" width="300"/></td>
-    <td><img src="doc/images/web/web-dashboard.png" width="300"/></td>
-    <td><img src="doc/images/web/web-search.png" width="300"/></td>
+    <td><img src="doc/images/web/web-login.png" width="500"/></td>
+    <td><img src="doc/images/web/web-dashboard.png" width="500"/></td>
+    <td><img src="doc/images/web/web-idle.png" width="500"/></td>
   </tr>
   <tr>
-    <td><img src="doc/images/web/web-trends.png" width="300"/></td>
-    <td><img src="doc/images/web/web-message.png" width="300"/></td>
-    <td><img src="doc/images/web/web-follow.png" width="300"/></td>
+    <td><img src="doc/images/web/web-search.png" width="500"/></td>
+    <td><img src="doc/images/web/web-trends-note.png" width="500"/></td>
+    <td><img src="doc/images/web/web-trends-idle.png" width="500"/></td>
   </tr>
   <tr>
-    <td><img src="doc/images/web/web-publish.png" width="300"/></td>
-    <td><img src="doc/images/web/web-publish-map.png" width="300"/></td>
-    <td><img src="doc/images/web/web-publish-img.png" width="300"/></td>
+    <td><img src="doc/images/web/web-publish.png" width="500"/></td>
+    <td><img src="doc/images/web/web-publish-img.png" width="500"/></td>
+    <td><img src="doc/images/web/web-publish-video.png" width="500"/></td>
   </tr>
   <tr>
-    <td><img src="doc/images/web/web-publish-video.png" width="300"/></td>
-    <td><img src="doc/images/web/web-main-img.png" width="300"/></td>
-    <td><img src="doc/images/web/web-user.png" width="300"/></td>
+    <td><img src="doc/images/web/web-publish-map.png" width="500"/></td>
+    <td><img src="doc/images/web/web-main-img.png" width="500"/></td>
+    <td><img src="doc/images/web/web-main-video.png" width="500"/></td>
+  </tr>
+  <tr>
+    <td><img src="doc/images/web/web-message-note.png" width="500"/></td>
+    <td><img src="doc/images/web/web-message-idle.png" width="500"/></td>
+    <td><img src="doc/images/web/web-message-comment.png" width="500"/></td>
+  </tr>
+  <tr>
+    <td><img src="doc/images/web/web-message-like.png" width="500"/></td>
+    <td><img src="doc/images/web/web-message-follow.png" width="500"/></td>
+    <td><img src="doc/images/web/web-user.png" width="500"/></td>
+  </tr>
+  <tr>
+    <td><img src="doc/images/web/web-user-mine.png" width="500"/></td>
+    <td><img src="doc/images/web/web-user-idle.png" width="500"/></td>
   </tr>
 </table>
 
@@ -204,18 +213,18 @@
 
 <table>
   <tr>
-    <td><img src="doc/images/admin/admin-login.png" width="300"/></td>
-    <td><img src="doc/images/admin/admin-data.png" width="300"/></td>
-    <td><img src="doc/images/admin/admin-category.png" width="300"/></td>
+    <td><img src="doc/images/admin/admin-login.png" width="500"/></td>
+    <td><img src="doc/images/admin/admin-data.png" width="500"/></td>
+    <td><img src="doc/images/admin/admin-data-map.png" width="500"/></td>
   </tr>
   <tr>
-    <td><img src="doc/images/admin/admin-member.png" width="300"/></td>
-    <td><img src="doc/images/admin/admin-note.png" width="300"/></td>
-    <td><img src="doc/images/admin/admin-album.png" width="300"/></td>
+    <td><img src="doc/images/admin/admin-note.png" width="500"/></td>
+    <td><img src="doc/images/admin/admin-idle.png" width="500"/></td>
+    <td><img src="doc/images/admin/admin-member.png" width="500"/></td>
   </tr>
   <tr>
-    <td><img src="doc/images/admin/admin-comment.png" width="300"/></td>
-    <td><img src="doc/images/admin/admin-log.png" width="300"/></td>
+    <td><img src="doc/images/admin/admin-album.png" width="500"/></td>
+    <td><img src="doc/images/admin/admin-comment.png" width="500"/></td>
   </tr>
 </table>
 
@@ -223,21 +232,31 @@
 
 <table>
   <tr>
-    <td><img src="doc/images/app/app-login.png" width="200"/></td>
-    <td><img src="doc/images/app/app-index.png" width="200"/></td>
-    <td><img src="doc/images/app/app-trend.png" width="200"/></td>
-    <td><img src="doc/images/app/app-message.png" width="200"/></td>
+    <td><img src="doc/images/app/app-login.png" width="300"/></td>
+    <td><img src="doc/images/app/app-index.png" width="300"/></td>
+    <td><img src="doc/images/app/app-follow.png" width="300"/></td>
+    <td><img src="doc/images/app/app-near.png" width="300"/></td>
   </tr>
   <tr>
-    <td><img src="doc/images/app/app-user.png" width="200"/></td>
-    <td><img src="doc/images/app/app-user-edit.png" width="200"/></td>
-    <td><img src="doc/images/app/app-follow.png" width="200"/></td>
-    <td><img src="doc/images/app/app-search.png" width="200"/></td>
+    <td><img src="doc/images/app/app-idle.png" width="300"/></td>
+    <td><img src="doc/images/app/app-user.png" width="300"/></td>
+    <td><img src="doc/images/app/app-user-mine.png" width="300"/></td>
+    <td><img src="doc/images/app/app-message.png" width="300"/></td>
   </tr>
   <tr>
-    <td><img src="doc/images/app/app-main.png" width="200"/></td>
-    <td><img src="doc/images/app/app-push.png" width="200"/></td>
-    <td><img src="doc/images/app/app-comment.png" width="200"/></td>
-    <td><img src="doc/images/app/app-like.png" width="200"/></td>
+    <td><img src="doc/images/app/app-search.png" width="300"/></td>
+    <td><img src="doc/images/app/app-main.png" width="300"/></td>
+    <td><img src="doc/images/app/app-comment.png" width="300"/></td>
+    <td><img src="doc/images/app/app-like.png" width="300"/></td>
   </tr>
 </table>
+
+
+## 🙏 致谢
+
+- [若依 RuoYi](https://gitee.com/y_project/RuoYi)
+- [蘑菇博客](https://gitee.com/moxi159753/mogu_blog_v2)
+- [xiaozhao 仿小红书前端](https://gitee.com/xzjsccz/xiaohongshu)
+- <img src="./doc/images/qiniu.jpg" width="80" />感谢 [七牛云](https://portal.qiniu.com/signup?utm_source=kaiyuan&utm_media=mogu) 提供的免费云存储和CDN服务
+- <img src="./doc/images/jetbrains.png" width="40" />感谢 [jetbrains](https://www.jetbrains.com/?from=mogu_blog_v2) 提供的开源License
+---
