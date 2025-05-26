@@ -72,7 +72,7 @@
 ## 📅 版本演进
 > 💡 点击下方版本号可展开查看详细内容
 <details>
-<summary><b>v1.0（当前Lite版）</b></summary>
+<summary><b>v1.0（Lite版）</b></summary>
 
 - ES 智能查询、笔记随机推荐
 - 笔记支持图文类型
@@ -107,11 +107,13 @@
 
 ## 🌐 演示站（微服务版本-持续更新）
 
-| 端口   | 入口链接                                   | 二维码                     |
-|--------|--------------------------------------------|----------------------------|
-| Web端  | [点我进入](http://115.190.73.103)         | -                          |
-| 管理端 | [点我进入](http://115.190.73.103/admin/)  | -                          |
-| 移动端 | [点我进入](http://115.190.73.103/app/)    | <img src="doc/images/h5.png" width="100"/> |
+小龟速服务器正在奔跑中...您的咖啡☕️打赏将直接兑换成服务器涡轮增压⏩
+
+| 端口   | 入口链接                                   | 二维码                                        |
+|--------|--------------------------------------------|--------------------------------------------|
+| Web端  | [点我进入](http://115.190.73.103)         | -                                          |
+| 管理端 | [点我进入](http://115.190.73.103/admin/)  | -                                          |
+| 移动端 | [点我进入](http://115.190.73.103/app/)    | <img src="doc/images/h5.png" width="120"/> |
 
 > 🌟 Pro版源码暂未开源，如需可点击 [获取源码](https://www.yuque.com/xiaomage-ippj7/kaoqwn/rqslw69egcbgx7v7?singleDoc#)
 > 或 `添加微信` 获取👇 
@@ -144,11 +146,8 @@
 ## 💖 打赏支持
 
 感谢小伙伴们打赏支持！当前服务器配置有限（2核4G），偶尔会有加载缓慢的情况。
-
 <img src="doc/images/pay.png" width="300"/>
 
-`小龟速服务器正在奔跑中...您的咖啡☕️打赏将直接兑换成服务器涡轮增压⏩
-`
 ---
 
 ## 🛠️ 快速开始
@@ -259,4 +258,3 @@
 - [xiaozhao 仿小红书前端](https://gitee.com/xzjsccz/xiaohongshu)
 - <img src="./doc/images/qiniu.jpg" width="80" />感谢 [七牛云](https://portal.qiniu.com/signup?utm_source=kaiyuan&utm_media=mogu) 提供的免费云存储和CDN服务
 - <img src="./doc/images/jetbrains.png" width="40" />感谢 [jetbrains](https://www.jetbrains.com/?from=mogu_blog_v2) 提供的开源License
----
