@@ -120,6 +120,10 @@
 > 
 > <img src="doc/images/wx.png" width="200"/>
 
+> 遇到问题？想获取最新动态？扫码加入临时交流群，我们一起讨论优化~
+> 
+> <img src="doc/images/wx.jpg" width="200"/>
+
 ---
 
 ## 📦 项目地址
