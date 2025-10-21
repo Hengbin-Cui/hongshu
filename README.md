@@ -120,10 +120,10 @@ HongShu - 一款深度融合 AI 大模型能力的现代化社交电商平台，
 
 | 端类型 | 访问方式                                                                           | 备注 |
 |--------|--------------------------------------------------------------------------------|------|
-| Web端 | [点击访问](http://115.190.73.103)                                                  | 完整功能体验 |
-| 管理端 | [点击访问](http://115.190.73.103/admin/)                                           | 后台管理系统 |
-| Arco管理端 | [点击访问](http://115.190.73.103/arco-admin/)                                      | 新版管理界面 |
-| 移动端(H5) | [点击访问](http://115.190.73.103/app/) 或 <img src="doc/images/h5.png" width="80"/> | 扫码体验 |
+| Web端 | [点击访问](https://hongshu.website/)                                                  | 完整功能体验 |
+| 管理端 | [点击访问](https://hongshu.website/admin/)                                           | 后台管理系统 |
+| Arco管理端 | [点击访问](https://hongshu.website/arco-admin/)                                      | 新版管理界面 |
+| 移动端(H5) | [点击访问](https://hongshu.website/app/) 或 <img src="doc/images/h5.png" width="80"/> | 扫码体验 |
 | 微信小程序 | 体验版 <img src="doc/images/wxamp.png" width="80"/>                               | 扫码体验 |
 ---
 
@@ -175,19 +175,6 @@ HongShu - 一款深度融合 AI 大模型能力的现代化社交电商平台，
 感谢小伙伴们打赏支持用于升级服务器❤️
 
 <img src="doc/images/pay.png" width="300"/>
-
----
-
-## 🛠️ 快速开始
-
-详见 [项目文档](https://www.yuque.com/xiaomage-ippj7/kaoqwn/zdgtgrco82vftbot?singleDoc# )，或参考各子项目 README 进行本地部署体验。
-
-- Q: 如何本地运行？
-  A: 详见各子项目 README 或 [项目文档](https://www.yuque.com/xiaomage-ippj7/kaoqwn/zdgtgrco82vftbot?singleDoc# )。
-- Q: 依赖环境有哪些？
-  A: JDK 8+、Node 16+、MySQL 8+、Redis 7+ 、Elasticsearch 8+等。
-- Q: 数据库脚本在哪里？
-  A: 见后端项目 `doc/sql` 目录。
 
 ---
 
