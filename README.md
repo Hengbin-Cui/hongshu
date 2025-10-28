@@ -166,6 +166,8 @@ HongShu - 一款深度融合 AI 大模型能力的现代化社交电商平台，
 
 </details>
 
+---
+
 ## 🌐 演示站（微服务版本 - 演进更新）
 
 > 💡 **温馨提示**: 服务器配置有限，如遇访问缓慢请耐心等待
@@ -185,17 +187,39 @@ HongShu - 一款深度融合 AI 大模型能力的现代化社交电商平台，
 
 <table>
 <tr>
-<td align="center" width="50%">
+<td align="center" width="33%">
 
 #### 🤝 项目定制 & 部署
 <img src="doc/images/wx.png" width="200"/>
-<p>微信联系</p>
-</td>
-<td align="center" width="50%">
 
-#### 💬 技术交流
+- 项目部署指导
+- 功能定制开发
+- 技术咨询支持
+- Bug修复服务
+
+</td>
+<td align="center" width="33%">
+
+#### 💬 技术交流群
 <img src="doc/images/qq.png" width="200"/>
-<p>QQ交流群</p>
+
+- 技术问题解答
+- 学习资料分享
+- 项目更新通知
+- 优先内测资格
+
+</td>
+<td align="center" width="33%">
+
+#### 💖 打赏支持
+<img src="doc/images/pay.png" width="200"/>
+
+**您的支持是我前进的动力！**
+- 升级服务器配置
+- 持续功能开发
+- 提升访问速度
+- 更好的开源体验
+
 </td>
 </tr>
 </table>
