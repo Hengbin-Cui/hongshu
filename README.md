@@ -243,13 +243,6 @@ HongShu - 一款深度融合 AI 大模型能力的现代化社交电商平台，
 
 - [演示视频](https://www.bilibili.com/video/BV1dr7Gz9E53/?vd_source=ec9224821314432ac6e12dc7d500d74b)
 
-## 💖 打赏支持
-
-当前服务器配置有限（2核4G），偶尔会有加载缓慢的情况。
-感谢小伙伴们打赏支持升级服务器❤️
-
-<img src="doc/images/pay.png" width="300"/>
-
 ---
 
 ## 📷 演示图
