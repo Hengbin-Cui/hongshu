@@ -1,5 +1,5 @@
 <p align="center">
-  <img alt="logo" src="https://image.mayongjian.cn/2024/07/03/1de3ee08e0a34ab6bf9a163d380fb596.png" width="100"/>
+  <img alt="logo" src="https://image.mayongjian.cn/2025/11/11/d6ab67fa0291468ea68afdfb18217ae4.png" width="100"/>
 </p>
 
 <h1 align="center" style="margin: 30px 0 30px; font-weight: bold;">HongShu</h1>
@@ -29,9 +29,9 @@
 ---
 ### 🎓 适合人群
 
-| 👨‍💻 **全栈开发者** | 🎯 **求职者** | 🏢 **创业团队** | 📚 **学生党** |
-|:---:|:---:|:---:|:---:|
-| 学习 SpringBoot + Vue 全栈开发<br>了解微服务架构设计<br>掌握前后端分离开发 | 简历项目经验<br>面试技术亮点<br>实战能力证明 | 快速搭建社交平台<br>二次开发定制<br>商业化落地 | 毕业设计项目<br>技术栈学习<br>实战经验积累 |
+|                       👨‍💻 **全栈开发者**                       | 🎯 **求职者** | 🏢 **创业团队** | 📚 **学生党** |
+|:-----------------------------------------------------------:|:---:|:---:|:---:|
+| 学习 SpringBoot + Vue + Uniapp 全栈开发<br>了解微服务架构设计<br>掌握前后端分离开发 | 简历项目经验<br>面试技术亮点<br>实战能力证明 | 快速搭建社交平台<br>二次开发定制<br>商业化落地 | 毕业设计项目<br>技术栈学习<br>实战经验积累 |
 
 ## 🚀 项目简介
 
@@ -140,11 +140,10 @@ HongShu - 一款深度融合 AI 大模型能力的现代化社交电商平台，
 
 - ✅ SpringCloud 微服务架构
 - ✅ Nacos 配置中心
-- ✅ Netty 即时通讯系统
+- ✅ WebSocket 即时通讯系统
 - ✅ 闲置商城（社交电商融合）
 - ✅ 高德地图 LBS 定位
 - ✅ Redis + RocketMQ 高并发优化
-- ✅ WebSocket 离线消息推送
 
 </details>
 
@@ -152,6 +151,7 @@ HongShu - 一款深度融合 AI 大模型能力的现代化社交电商平台，
 <summary><b>v4.0（Pro版）</b></summary>
 
 - ✅ 支持扫码登录
+- ✅ WebSocket 离线消息推送
 - ✅ 8+ 主流AI大模型集成
 - ✅ 智能对话系统
 - ✅ AI辅助创作
@@ -263,20 +263,18 @@ HongShu - 一款深度融合 AI 大模型能力的现代化社交电商平台，
   </tr>
   <tr>
     <td><img src="doc/images/web/web-trends-note.png" width="500"/></td>
-    <td><img src="doc/images/web/web-trends-idle.png" width="500"/></td>
-    <td><img src="doc/images/web/web-publish.png" width="500"/></td>
+    <td><img src="doc/images/web/web-message.png" width="500"/></td>
+    <td><img src="doc/images/web/web-user.png" width="500"/></td>
   </tr>
   <tr>
-    <td><img src="doc/images/web/web-publish-map.png" width="500"/></td>
+    <td><img src="doc/images/web/web-publish.png" width="500"/></td>
     <td><img src="doc/images/web/web-publish-img.png" width="500"/></td>
     <td><img src="doc/images/web/web-publish-video.png" width="500"/></td>
   </tr>
   <tr>
     <td><img src="doc/images/web/web-message-comment.png" width="500"/></td>  
-    <td><img src="doc/images/web/web-message-like.png" width="500"/></td>
-    <td><img src="doc/images/web/web-user.png" width="500"/></td>
-  </tr>
-  <tr>
+    <td><img src="doc/images/web/web-message-notice.png" width="500"/></td>
+    <td><img src="doc/images/web/web-message-chat.png" width="500"/></td>
   </tr>
 </table>
 
@@ -316,15 +314,15 @@ HongShu - 一款深度融合 AI 大模型能力的现代化社交电商平台，
   </tr>
   <tr>
     <td><img src="doc/images/app/app-idle.png" width="300"/></td>
-    <td><img src="doc/images/app/app-user.png" width="300"/></td>
     <td><img src="doc/images/app/app-main.png" width="300"/></td>
-    <td><img src="doc/images/app/app-user-mine.png" width="300"/></td>
+    <td><img src="doc/images/app/app-user.png" width="300"/></td>
+    <td><img src="doc/images/app/app-publish.png" width="300"/></td>
   </tr>
   <tr>
     <td><img src="doc/images/app/app-message.png" width="300"/></td>
-    <td><img src="doc/images/app/app-message-follow.png" width="300"/></td>
-    <td><img src="doc/images/app/app-message-comment.png" width="300"/></td>
-    <td><img src="doc/images/app/app-message-like.png" width="300"/></td>
+    <td><img src="doc/images/app/app-message-notice.png" width="300"/></td>
+    <td><img src="doc/images/app/app-menu.png" width="300"/></td>
+    <td><img src="doc/images/app/app-user-mine.png" width="300"/></td>
   </tr>
 </table>
 
