@@ -230,7 +230,7 @@
 <td align="center" width="25%">
 
 #### 💖 打赏支持
-<img src="doc/images/pay.png" width="150"/>
+<img src="doc/images/pay.png" width="200"/>
 
 **您的支持是我前进的动力！**
 - 升级服务器配置
